@@ -1,6 +1,8 @@
 import requests
 def test_api_status():
-    url = "https://jsonplaceholder.typicode.com/posts/1" #I NEED TO CHANge it on day
+
+    url = "https://jsonplaceholder.typicode.com/posts/12" #I NEED TO CHANge it on day
+
     r = requests.get(url, timeout = 10)
     print(f"Status :{r.status_code}")
     assert r.status_code == 200, "API FAILED"
